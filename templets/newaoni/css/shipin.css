@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* 简单流媒体
+   注意: 流媒体要求您删除 HTML 中媒体的高度和宽度属性
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 不支持最大宽度，因此默认为 100% 宽度 */
+.ie6 img {
+	width:100%;
+}
+/*
+	Dreamweaver 流体网格属性
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	灵感来自于 Ethan Marcotte 的“具有响应的 Web 设计” 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	和 Joni Korpi 的“黄金网格系统”
+	http://goldengridsystem.com/
+*/
+
+/* 移动设备布局: 480px 及更低。 */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.hei,.hei-2,.hei-3,.hei-4{ width:100%; background:#000;display:none; height:auto;z-index:9}
+.img-responsive{display:block;height:auto;max-width:100%;}
+.dropdown{ position: relative}
+.dropdown  .caret{ background:url(sanjiao.png) no-repeat; width:100%; height:4px; position:absolute; top:5px; right:-55px;}
+.dropdown-toggle{ width:auto;}
+.photo{  margin-top:120px;}
+.shipin,.shipin-2,.shipin-3,.shipin-4{ width:50%; padding:5px; border:1px #FFF solid; margin:8% auto; position:relative; }
+.shipin span,.shipin-2 span,.shipin-3 span,.shipin-4 span{ float:right; cursor:pointer; display:block; font-size:20px; color:#fff;}
+/* 平板电脑布局: 481px 至 768px。样式继承自: 移动设备布局。 */
+@media only screen and (min-width:320px) and (max-width:480px) {
+	.shipin{width:94% !important; height:auto;}
+	.video{ width:40%; height:auto;}
+}
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+}
+
+/* 桌面电脑布局: 769px 至最高 1232px。样式继承自: 移动设备布局和平板电脑布局。 */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+}

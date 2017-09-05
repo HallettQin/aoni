@@ -1,0 +1,1 @@
+<div class="footer">版权所有 <a href="http://www.ausny.com/" style="color:#ffffff;" target="_blank">奥妮安全套有限公司</a></div>

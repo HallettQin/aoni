@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* =Clearfix
+--------------------------------------------------------------------------------------------------------*/
+.clear { clear: both; }
+.clearfix:after { content: "."; display:block; height:0; clear:both; visibility:hidden; }/* ----- clear fix for floats ----- */
+.clearfix { display:inline-block; }
+* html .clearfix { height:1%; }/* hides clearfix from IE-mac */
+.clearfix { display:block; }/* end hide from IE-mac */
+.alignleft { float:left; }
+.alignright { float:right; }
+.aligncenter { margin:auto; display:block; }
+.alignnone { clear:both; font-size:0; line-height:0; margin:0; padding:0; border:0; height:0; width:0; }
+.centered { text-align:center; }
+/* End Clearfix */
+
+.sixths_team {
+	width: 375px;
+	height: 422px;
+	margin: 0 0px 0 0px;
+	float: left;
+	position: relative;
+	background-position: 0%;
+    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.sixths_team { width: 325px; height: 375px;}
+}
+.sixths_team a {
+	display: block;
+	width: 140px;
+	height: 140px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    }
+    
+.sixths_team a.profession {
+	display: block;
+	width: 140px;
+	height: 20px;
+	background-color: #fff;
+	text-decoration: none;
+	font-size: 95%;
+	padding-top: 10px;
+    }
+    
+.sixths_team a.profession:hover {
+	opacity: 1;
+    }
+    
+.sixths_team a:hover {
+	opacity: 0.10;
+    }
+    
+.sixths_team h4 {
+	position: absolute;
+	top: 150px;
+	display: block;
+	width: 380px;
+	text-align: center;
+	text-shadow: 0px 1px #FFF;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 140%;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: 黑体;
+    }
+.element p{ margin:0 15px;}
+   
+.sixths_team img{
+	position: absolute;
+    }
+    
+.sixths_team span {
+	font-weight: 400;
+	text-shadow: 0px 1px #FFF;
+    }
+.images img {width:100%; display: block; z-index:9; border:#FFF 5px solid;}
